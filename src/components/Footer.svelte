@@ -11,5 +11,6 @@
 <style>
     .vailcoder {
         text-align: right;
+        flex: auto;
     }
 </style>

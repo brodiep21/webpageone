@@ -33,7 +33,7 @@
   width: 600px;
   background-color: #51a2ff;
   border-radius:1em;
-  display:flex;
+  flex: auto;
 }
 .about_me {
   display: flex;
