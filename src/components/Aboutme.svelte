@@ -3,12 +3,15 @@
 </script>
 <br>
 <section class="about_me">
-    <!-- <div class= "aboutmebackground"> -->
+    <div class="blank"></div>
+    <div class="outer_rect">
+        <h1 class="about_me_title">Hi, I'm Brodie Peif</h1>
+        <img class="profile_pic" src={Profilepic} alt="Brodie smiling">
         <div class="rectangle">
-            <img class="profile_pic" src={Profilepic} alt="Brodie smiling">
-            </div>
-    <!-- </div> -->
-    <h1 class="about_me_title">Hi, I'm Brodie Peif</h1>
+        </div>
+    </div>
+    
+    
 </section>
     
 
@@ -17,21 +20,36 @@
     border-radius: 20%;
     width: 220px;
     height: 250px;
+    display: flex;
+    position:absolute;
 }
 .about_me {
     width: 100%;
     height: 250px;
 }
 .rectangle {
-  position:relative;
-  top: 45%;
-  left: 45%;
+  object-position: 4em;
   height: 50px;
-  width: 500px;
-  background-color: #130fe6;
+  width: 600px;
+  background-color: #51a2ff;
+  border-radius:1em;
+  display:flex;
 }
-h1 {
-    text-align: right;
-    position:relative;
+.about_me {
+  display: flex;
+  
 }
+.about_me_title {
+    position:absolute;
+    display:flex;
+    width: 30%;
+   padding
+}
+.outer_rect {
+    justify-content:center;
+}
+.blank {
+    width: 30%;
+}
+
 </style>
