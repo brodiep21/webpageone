@@ -43,7 +43,6 @@
     position:absolute;
     display:flex;
     width: 30%;
-   padding
 }
 .outer_rect {
     justify-content:center;
