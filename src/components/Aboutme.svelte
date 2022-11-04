@@ -11,7 +11,6 @@
     <div class="outer_rect">
         
         <img class="profile_pic" src={Profilepic} alt="Brodie smiling">
-    <!-- <div class="pic"> </div> -->
     </div>
     
     
@@ -161,7 +160,7 @@ h1.about_me_title {
    text-shadow: 0px 1px 1px rgba(44, 44, 44, 0.126);
    font-family: sans-serif;
    color: rgba(0, 0, 0, 0.652);
-   font-size: 24px;
+   font-size: 22px;
 }
 .profile_pic {
     border-radius: 20%;

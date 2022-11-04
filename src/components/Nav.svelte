@@ -1,20 +1,13 @@
 <script>
+    // import {toggleMenu} from './Menu.svelte'
     import Fa from 'svelte-fa/src/fa.svelte'
     import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
     // import {} from '@fortawesome/free-brands-svg-icons'
 
-    // function colorshift() {
-    //   var div = document.getElementById("line")
-    //  if (div.style.background= "black") {
-    //     div.style.background = "red";
-    //  } else {
-    //     div.style.background= "black"
-    //  }
-    // on:mouseover={colorshift} on:mouseout={colorshift} on:focus={colorshift} on:blur={colorshift}
-    // }
+    
 </script>
 <nav class="navbar">
-    <div class="hamburg" >
+    <div class="hamburg">
         <div id="line" class="line"></div>
         <div id="line" class="line"></div>
         <div id="line" class="line"></div>
@@ -28,11 +21,9 @@
             <a href=https://www.linkedin.com/in/brodie-peif-871164230 rel="noreferrer" target="_blank"><Fa icon={faLinkedin} size=2.5x primaryColor='black'/></a>
         </div>
         </ul>
-        <!-- <div class="box"></div> -->
-    <!-- <div class="container">
         
         
-    </div> -->
+    </div>
 </nav>
 <style>
 nav {
@@ -41,7 +32,6 @@ nav {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.336);
     height: 55px;
 }
-
 .nav_list {
     color: black;
     text-align:center;
@@ -105,7 +95,8 @@ nav {
     border-bottom: 1px solid;
     height: 55px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.336);
-}
+    z-index: -1;
+    }
 
     .line {
         width: 30px;
