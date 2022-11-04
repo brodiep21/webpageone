@@ -3,15 +3,15 @@
 </script>
 <section class="about_me">
     
-    <div class="whitespace"></div>
-    <div class="rectangle">
-        <img class="profile_pic" src={Profilepic} alt="Brodie smiling">
-        <h1 class="about_me_title">Hi, I'm Brodie Peif</h1></div>
-    
+    <div class="whitespace">
+        <div class="rectangle">
+            <h1 class="about_me_title">Hi, I'm Brodie Peif</h1>
+        </div>
+    </div>
     <div class="outer_rect">
         
-    <div class="pic">
-        </div>
+        <img class="profile_pic" src={Profilepic} alt="Brodie smiling">
+    <!-- <div class="pic"> </div> -->
     </div>
     
     
@@ -19,19 +19,19 @@
     
 
 <style>
-.pic {
+/* .pic {
     display: flex;
     margin-left: 20%;
     position: absolute;
     width: 100%;
-}
+} */
 .profile_pic {
     border-radius: 20%;
     width: 225px;
     height: 250px;
     box-shadow: 0px 6px 15px  grey;
-    position: absolute;
-    margin-left: 10%;
+    position: relative;
+    margin-right: 25%
 }
 .about_me {
     width: 100%;
@@ -40,22 +40,23 @@
     display: flex;
 }
 .whitespace {
-    position: relative;
-    margin-top: 20px;
+    position: absolute;
+    height: 100px;
+    width: 75%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 .rectangle {
-  height: 50px;
+  height: 55px;
   width: 75%;
-  max-width: 700px;
-  background-color: #3ad98c;
+  /* min-width: 700px; */
+  max-width: 800px;
+  background-color: #3E92CC;
   border-radius:1em;
   position:absolute;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.834)
-}
-.int_rect {
-    height: 50px;
-    width:100%;
-    text-align: end;
+  box-shadow: 0px 1px 5px rgb(119, 117, 117);
+  text-align: center;
 }
 .about_me {
   display: flex;
@@ -66,18 +67,109 @@
     display:flex;
 }
 .outer_rect {
-    width: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
 }
 
 h1.about_me_title {
    justify-content:right;
-   margin-top: 11px;
+   margin-top: 15px;
    text-align: justify;
    width:100% inherit;
    margin-left: 60% ;
    text-shadow: 0px 1px 1px rgba(44, 44, 44, 0.341);
    font-family: sans-serif;
    color: rgba(0, 0, 0, 0.652);
+   font-size: 24px;
 }
 
+@media screen and (max-width: 450px) {
+    .whitespace {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+}
+.rectangle {
+  height: 45px;
+  width: 75%;
+  min-width: 385px;
+  background-color: #3E92CC;
+  border-radius:1em;
+  position:absolute;
+  box-shadow: 0px 1px 5px rgb(119, 117, 117);
+  text-align: center;
+}
+.about_me {
+    width: 100%;
+    height: 200px;
+    margin-top:15px;
+    display: flex;
+}
+h1.about_me_title {
+   justify-content:right;
+   margin-top: 11px;
+   text-align: justify;
+   width:100% inherit;
+   margin-left: 50% ;
+   text-shadow: 0px 1px 1px rgba(44, 44, 44, 0.126);
+   font-family: sans-serif;
+   color: rgba(0, 0, 0, 0.652);
+   font-size: 20px;
+}
+.profile_pic {
+    border-radius: 20%;
+    width: 150px;
+    height: 175px;
+    box-shadow: 0px 6px 15px  grey;
+    position: relative;
+    margin-right: 65%;
+}
+}
+@media screen and (min-width: 451px) and (max-width: 950px){
+    .whitespace {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+}
+.rectangle {
+  height: 55px;
+  width: 70%;
+  min-width: 350px;
+  background-color: #3E92CC;
+  border-radius:1em;
+  position:absolute;
+  box-shadow: 0px 1px 5px rgb(119, 117, 117);
+  text-align: center;
+}
+.about_me {
+    width: 100%;
+    height: 250px;
+    margin-top:15px;
+    display: flex;
+}
+h1.about_me_title {
+   justify-content:right;
+   margin-top: 15px;
+   text-align: justify;
+   width:100% inherit;
+   margin-left: 50% ;
+   text-shadow: 0px 1px 1px rgba(44, 44, 44, 0.126);
+   font-family: sans-serif;
+   color: rgba(0, 0, 0, 0.652);
+   font-size: 24px;
+}
+.profile_pic {
+    border-radius: 20%;
+    width: 150px;
+    height: 175px;
+    box-shadow: 0px 6px 15px  grey;
+    position: relative;
+    margin-right: 65%;
+}
+}
 </style>
