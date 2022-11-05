@@ -1,57 +1,187 @@
 <script>
-    // import {toggleMenu} from './Menu.svelte'
     import Fa from 'svelte-fa/src/fa.svelte'
-    import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+    import {faGithub, faLinkedin, faFacebook} from '@fortawesome/free-brands-svg-icons'
     // import {} from '@fortawesome/free-brands-svg-icons'
 
     
 </script>
-<nav class="navbar">
+<nav>
     <div class="hamburg">
+        <input type="checkbox">
+        <!-- <div id="line" class="line"></div>
         <div id="line" class="line"></div>
-        <div id="line" class="line"></div>
-        <div id="line" class="line"></div>
-        <ul class="nav_list">
+        <div id="line" class="line"></div> -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="menu">
             <li class="nav_item"><a href="#about" class="navlink" >About Me</li>
             <li class="nav_item"><a href="#aspirations" class="navlink" >Aspirations</a></li>
-            <li class="nav_item"><a href="#services" class="navlink" >My Services</a></li>
-            <li class="nav_item"><a href="#work" class="navlink" >My Projects/Work</a></li>
-        <div class="link_FA">
-            <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>
-            <a href=https://www.linkedin.com/in/brodie-peif-871164230 rel="noreferrer" target="_blank"><Fa icon={faLinkedin} size=2.5x primaryColor='black'/></a>
+            <li class="nav_item"><a href="#services" class="navlink" >Services</a></li>
+            <li class="nav_item"><a href="#work" class="navlink" >Projects/Work</a></li>
+                <div class="link_FA">
+                    <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>
+                    <a href=https://www.linkedin.com/in/brodie-peif-871164230 rel="noreferrer" target="_blank"><Fa icon={faLinkedin} size=2.5x primaryColor='black'/></a>
+                    <a href=https://www.facebook.com/bpeif rel="noreferrer" target="_blank"><Fa icon={faFacebook} size=2.5x primaryColor='black'/></a>
+                </div>
         </div>
-        </ul>
-        
-        
     </div>
 </nav>
+
 <style>
+    @media screen and (max-width: 1005px){
+     nav {
+    color: rgb(68, 65, 65);
+    border-bottom: 1px solid;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.336);
+    height: 60px;
+    content-visibility: hamburg;
+    }
+
+    .hamburg {
+        cursor:pointer;
+        padding: 15px;
+        position: relative;
+        display: flex;
+        width: 40px;
+        height: 20px;
+        border-radius: 20px;
+        box-shadow: 0 1px 4px black;
+        background-color: #ffffff;
+        transition: .5sec;
+        justify-content: center;
+        margin-left: 45%;
+        overflow: hidden;
+    }
+
+    .hamburg input {
+        width: 40px;
+        height: 20px;
+        opacity: 0;
+        cursor:pointer;
+    }
+    .hamburg input:checked ~ .menu {
+        width: 400px;
+        /* margin */
+    }
+    .menu {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        /* overflow: hidden; */
+        list-style: none;
+        transition: .5sec;
+        display: flex;
+    }
+    .menu li {
+        margin: 0 10px;
+    }
+    .menu li a {
+        text-decoration: none;
+        color:black;
+        text-transform: uppercase;
+        font-weight: 800;
+        transition: .5sec;
+    }
+    .menu li a:hover {
+        color:#3E92CC
+    }
+    .hamburg span {
+        position:absolute;
+        width: 30px;
+        height: 5px;
+        margin-top: 7px;
+        border-radius: 50px;
+        background-color: black;
+        pointer-events: none;
+        transition: .5sec;
+        overflow: hidden;
+    }
+    .hamburg span:nth-child(2) {
+        transform: translateY(-8px)
+    }
+    .hamburg span:nth-child(3) {
+        transform: translateY(8px)
+    }
+    .hamburg span :hover {
+        background-color: white;
+    }
+    .hamburg input:checked ~ span {
+        background-color: red;
+    }
+    .hamburg input:checked ~ span:nth-child(2) {
+        transform: translateY(0) rotate(-45deg);
+    }
+    .hamburg input:checked ~ span:nth-child(2) {
+        transform: translateY(0) rotate(45deg);
+    }
+    .hamburg input:checked ~ span:nth-child(4) {
+        display:none;
+    }
+
+    .link_FA {
+        display: none;
+    }
+}
+@media screen and (min-width: 1006px) {
 nav {
     color: rgb(68, 65, 65);
     border-bottom: 1px solid;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.336);
-    height: 55px;
+    height: 60px;
 }
-.nav_list {
-    color: black;
-    text-align:center;
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: 800;
+    overflow: hidden;
+    background: linear-gradient(to right, #3E92CC, #3E92CC 50%, rgb(0, 0, 0) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 500ms ease;
+}
+.menu {
     display: flex;
-    text-decoration: none;
-    font-size: 19px;
     list-style: none;
-    height: 100%;
-    width: 95%;
-    column-gap: 5px;
+    column-gap: 2em;
+    justify-content: space-evenly;
 }
 
+.nav_item {
+    margin-top: .4em;
+    font-size: 24px;
+}
+nav a:hover{
+    background-position: 0 100%;
+}
+.hamburg input {
+  display: none;
+}
 .link_FA {
     display: flex;
     margin-left: auto;
-    column-gap: 12px;
+    column-gap: .5em;
 }
-.link_FA :hover {
-    box-shadow: 0 1px 0 rgb(89, 86, 86);
-    /* transform: box-shadow .3s ease-in-out; */
+.link_FA ::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #3E92CC;
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+}
+
+.link_FA :hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
 }
 /* .box {
   position: relative;
@@ -89,52 +219,5 @@ nav {
 .box:hover::after {
     opacity: 1;
 } */
-@media screen and (max-width: 768px){
-    nav {
-    color: rgb(68, 65, 65);
-    border-bottom: 1px solid;
-    height: 55px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.336);
-    z-index: -1;
-    }
-
-    .line {
-        width: 30px;
-        height: 5px;
-        background:black;
-        margin: 5px;
-    }
-    .hamburg {
-        cursor:pointer;
-        width: 40px;
-        position: absolute;
-    }
-    .link_FA {
-    /* width: 10%; */
-    margin-left: auto;
-    column-gap: 12px;
-
-    }
-    /* .navlink {
-        position: fixed;
-        height: 100vh;
-        width:100%;
-        flex-direction:column;
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
-        transition: all 1s ease-out;
-    }
-    .navlink.open {
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
-
-    } */
-    .nav_list{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        flex-direction:column;
-        display: none;
-    }
 }
 </style>

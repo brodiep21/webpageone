@@ -1,7 +1,7 @@
 <script>
     import Profilepic from '../img/profilepic.jpg'
 </script>
-<section class="about_me">
+<section class="about_me" href=#about>
     
     <div class="whitespace">
         <div class="rectangle">
@@ -18,12 +18,6 @@
     
 
 <style>
-/* .pic {
-    display: flex;
-    margin-left: 20%;
-    position: absolute;
-    width: 100%;
-} */
 .profile_pic {
     border-radius: 20%;
     width: 225px;
@@ -80,7 +74,7 @@ h1.about_me_title {
    text-shadow: 0px 1px 1px rgba(44, 44, 44, 0.341);
    font-family: sans-serif;
    color: rgba(0, 0, 0, 0.652);
-   font-size: 24px;
+   font-size: 26px;
 }
 
 @media screen and (max-width: 450px) {
@@ -94,7 +88,7 @@ h1.about_me_title {
 .rectangle {
   height: 45px;
   width: 75%;
-  min-width: 385px;
+  min-width: 375px;
   background-color: #3E92CC;
   border-radius:1em;
   position:absolute;
@@ -112,11 +106,11 @@ h1.about_me_title {
    margin-top: 11px;
    text-align: justify;
    width:100% inherit;
-   margin-left: 50% ;
+   margin-left: 48% ;
    text-shadow: 0px 1px 1px rgba(44, 44, 44, 0.126);
    font-family: sans-serif;
    color: rgba(0, 0, 0, 0.652);
-   font-size: 20px;
+   font-size: 22px;
 }
 .profile_pic {
     border-radius: 20%;
@@ -127,7 +121,7 @@ h1.about_me_title {
     margin-right: 65%;
 }
 }
-@media screen and (min-width: 451px) and (max-width: 950px){
+@media screen and (min-width: 451px) and (max-width: 1000px){
     .whitespace {
     position: absolute;
     height: 100px;
@@ -160,7 +154,7 @@ h1.about_me_title {
    text-shadow: 0px 1px 1px rgba(44, 44, 44, 0.126);
    font-family: sans-serif;
    color: rgba(0, 0, 0, 0.652);
-   font-size: 22px;
+   font-size: 24px;
 }
 .profile_pic {
     border-radius: 20%;
