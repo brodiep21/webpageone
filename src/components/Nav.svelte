@@ -29,6 +29,8 @@
 </nav>
 
 <style>
+
+    /* <------------- SMALL SCREEN --------------> */
     @media screen and (max-width: 1005px){
      nav {
     color: rgb(68, 65, 65);
@@ -39,12 +41,11 @@
     }
 
     .hamburg {
-        cursor:pointer;
         padding: 15px;
         position: relative;
-        display: flex;
+        /* display: flex; */
         width: 40px;
-        height: 20px;
+        height: 22px;
         border-radius: 20px;
         box-shadow: 0 1px 4px black;
         background-color: #ffffff;
@@ -55,25 +56,26 @@
     }
 
     .hamburg input {
-        width: 40px;
-        height: 20px;
+        width: 30px;
+        height: 21px;
+        margin-top: 0;
         opacity: 0;
         cursor:pointer;
+        position: absolute;
     }
     .hamburg input:checked ~ .menu {
-        width: 400px;
-        /* margin */
+        width: 500px;
     }
+
     .menu {
         margin: 0;
         padding: 0;
-        position: relative;
-        /* overflow: hidden; */
-        list-style: none;
+        width: 0;
+        overflow: hidden;
         transition: .5sec;
-        display: flex;
     }
     .menu li {
+        list-style: none;
         margin: 0 10px;
     }
     .menu li a {
@@ -89,13 +91,13 @@
     .hamburg span {
         position:absolute;
         width: 30px;
-        height: 5px;
-        margin-top: 7px;
+        height: 4px;
+        margin-top: 9px;
+        margin-left: 4px;
         border-radius: 50px;
         background-color: black;
         pointer-events: none;
         transition: .5sec;
-        overflow: hidden;
     }
     .hamburg span:nth-child(2) {
         transform: translateY(-8px)
@@ -103,16 +105,16 @@
     .hamburg span:nth-child(3) {
         transform: translateY(8px)
     }
-    .hamburg span :hover {
+    /* .hamburg span :hover {
         background-color: white;
-    }
+    } */
     .hamburg input:checked ~ span {
-        background-color: red;
+        background-color: rgb(233, 68, 68);
     }
     .hamburg input:checked ~ span:nth-child(2) {
         transform: translateY(0) rotate(-45deg);
     }
-    .hamburg input:checked ~ span:nth-child(2) {
+    .hamburg input:checked ~ span:nth-child(3) {
         transform: translateY(0) rotate(45deg);
     }
     .hamburg input:checked ~ span:nth-child(4) {
@@ -123,6 +125,8 @@
         display: none;
     }
 }
+
+    /* <------------- LARGE SCREEN --------------> */
 @media screen and (min-width: 1006px) {
 nav {
     color: rgb(68, 65, 65);

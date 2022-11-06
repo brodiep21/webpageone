@@ -43,7 +43,6 @@
 .rectangle {
   height: 55px;
   width: 75%;
-  /* min-width: 700px; */
   max-width: 800px;
   background-color: #3E92CC;
   border-radius:1em;
@@ -77,6 +76,8 @@ h1.about_me_title {
    font-size: 26px;
 }
 
+
+/* <---------------- PHONE SCREEN ----------------> */
 @media screen and (max-width: 450px) {
     .whitespace {
     position: absolute;
@@ -121,6 +122,7 @@ h1.about_me_title {
     margin-right: 65%;
 }
 }
+/* <---------------- SMALL SCREEN ----------------> */
 @media screen and (min-width: 451px) and (max-width: 1000px){
     .whitespace {
     position: absolute;
