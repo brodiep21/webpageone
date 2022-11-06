@@ -1,4 +1,6 @@
 <script>
+    
+	import Burg from '../components/Burg.svelte'
     import Fa from 'svelte-fa/src/fa.svelte'
     import {faGithub, faLinkedin, faFacebook} from '@fortawesome/free-brands-svg-icons'
     // import {} from '@fortawesome/free-brands-svg-icons'
@@ -7,14 +9,8 @@
 </script>
 <nav>
     <div class="hamburg">
-        <input type="checkbox">
-        <!-- <div id="line" class="line"></div>
-        <div id="line" class="line"></div>
-        <div id="line" class="line"></div> -->
-        <span></span>
-        <span></span>
-        <span></span>
         <div class="menu">
+            <li class= "burg"><Burg/></li>
             <li class="nav_item"><a href="#about" class="navlink" >About Me</li>
             <li class="nav_item"><a href="#aspirations" class="navlink" >Aspirations</a></li>
             <li class="nav_item"><a href="#services" class="navlink" >Services</a></li>
@@ -30,96 +26,65 @@
 
 <style>
 
+
     /* <------------- SMALL SCREEN --------------> */
     @media screen and (max-width: 1005px){
      nav {
-    color: rgb(68, 65, 65);
+    border-bottom-color: rgb(68, 65, 65);;
     border-bottom: 1px solid;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.336);
     height: 60px;
-    content-visibility: hamburg;
+    /* display: flex;
+    justify-content: left;
+    align-items: center; */
     }
-
     .hamburg {
         padding: 15px;
-        position: relative;
-        /* display: flex; */
-        width: 40px;
+        width: fit-content;
+        min-width: 50px;
         height: 22px;
-        border-radius: 20px;
-        box-shadow: 0 1px 4px black;
-        background-color: #ffffff;
-        transition: .5sec;
-        justify-content: center;
-        margin-left: 45%;
-        overflow: hidden;
-    }
-
-    .hamburg input {
-        width: 30px;
-        height: 21px;
-        margin-top: 0;
-        opacity: 0;
-        cursor:pointer;
-        position: absolute;
-    }
-    .hamburg input:checked ~ .menu {
-        width: 500px;
+        transition: width .5sec;
     }
 
     .menu {
         margin: 0;
         padding: 0;
-        width: 0;
-        overflow: hidden;
-        transition: .5sec;
-    }
-    .menu li {
+        width: 100%;
         list-style: none;
-        margin: 0 10px;
     }
+
+    /* .hamburg input:checked ~ .menu{
+        width: 100%;
+        height: 20px;
+        transform: .5sec;
+        display: inline;
+        padding-left: 2em;
+        list-style: none;
+        justify-content: space-evenly;
+        font-weight: bold;
+        position: relative;
+    } */
     .menu li a {
         text-decoration: none;
-        color:black;
+        color:rgb(0, 0, 0);
         text-transform: uppercase;
-        font-weight: 800;
+        /* font-weight: 800; */
         transition: .5sec;
     }
     .menu li a:hover {
         color:#3E92CC
     }
-    .hamburg span {
+    /* .hamburg span {
         position:absolute;
         width: 30px;
         height: 4px;
         margin-top: 9px;
-        margin-left: 4px;
+        margin-left: 5px;
         border-radius: 50px;
         background-color: black;
         pointer-events: none;
         transition: .5sec;
-    }
-    .hamburg span:nth-child(2) {
-        transform: translateY(-8px)
-    }
-    .hamburg span:nth-child(3) {
-        transform: translateY(8px)
-    }
-    /* .hamburg span :hover {
-        background-color: white;
     } */
-    .hamburg input:checked ~ span {
-        background-color: rgb(233, 68, 68);
-    }
-    .hamburg input:checked ~ span:nth-child(2) {
-        transform: translateY(0) rotate(-45deg);
-    }
-    .hamburg input:checked ~ span:nth-child(3) {
-        transform: translateY(0) rotate(45deg);
-    }
-    .hamburg input:checked ~ span:nth-child(4) {
-        display:none;
-    }
 
     .link_FA {
         display: none;
@@ -148,6 +113,9 @@ nav a {
     background-position: 100%;
     transition: background-position 500ms ease;
 }
+.burg {
+    display: none;
+}
 .menu {
     display: flex;
     list-style: none;
@@ -162,9 +130,7 @@ nav a {
 nav a:hover{
     background-position: 0 100%;
 }
-.hamburg input {
-  display: none;
-}
+
 .link_FA {
     display: flex;
     margin-left: auto;
