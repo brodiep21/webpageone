@@ -24,8 +24,13 @@
     height: 250px;
     box-shadow: 0px 6px 15px  grey;
     position: relative;
-    margin-right: 25%
+    margin-right: 25%;
 }
+/* .profile_pic:hover {
+    box-shadow: 0px 6px 15px grey;
+    transform:scale(1.3);
+    z-index: 3;
+} */
 .about_me {
     width: 100%;
     height: 300px;
