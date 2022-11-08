@@ -1,17 +1,13 @@
-<script>
-  let menu = false;
-  export function openMenu () {
-    menu = !menu;
-   }
+<script context="module">
+  
 </script>
 
     <label for="check">
-            <input type="checkbox" id="check" on:click={openMenu}/> 
+            <input type="checkbox" id="check" /> 
             <span></span>
             <span></span>
             <span></span>
           </label>
-
 <style>
 
 label{

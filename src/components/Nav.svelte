@@ -1,12 +1,15 @@
 <script>
-    
-	import Burg, {openMenu} from '../components/Burg.svelte'
     import Fa from 'svelte-fa/src/fa.svelte'
     import {faGithub, faLinkedin, faFacebook} from '@fortawesome/free-brands-svg-icons'
+    import DropMenu from './DropMenu.svelte'
+    import Burg from './Burg.svelte'
 
+    let butts = true;
+  
 </script>
 <div class="navbar">
-    <div class="menu" {openMenu}>
+    
+    <div class="menu" >
         <li class="nav_item"><a href="#about" class="navlink" >About Me</li>
         <li class="nav_item"><a href="#aspirations" class="navlink" >Aspirations</a></li>
         <li class="nav_item"><a href="#services" class="navlink" >Services</a></li>
@@ -17,8 +20,9 @@
                 <a href=https://www.facebook.com/bpeif rel="noreferrer" target="_blank"><Fa icon={faFacebook} size=2.5x primaryColor='black'/></a>
             </div>
         </div>
-       <div class="burg"><Burg/></div>
-    <!-- </div> -->
+        
+        <div class="burg"><Burg/></div>
+       <DropMenu showMenu={butts}/>
     </div>
 
 <style>
@@ -40,29 +44,10 @@
         position:absolute;
         z-index: 3;
     }
+
     .menu {
-        padding: 0;
-        top: 100%;
-        width: 100%;
-        list-style: none;
-        position: absolute;
-        font-weight: 800;
-        font-size: larger;
-        background-color: #ffffffda;
-        text-align: center;
-        z-index: 3;
+        display: none;
     }
-
-    .menu li a {
-        text-decoration: none;
-        color:rgb(0, 0, 0);
-        text-transform: uppercase;
-        transition: .5sec;
-    }
-    .menu li a:hover {
-        color:#3E92CC
-    }
-
     .link_FA {
         display: none;
     }
@@ -93,7 +78,7 @@
 }
 .burg {
     display: none;
-}
+    }
 .menu {
     display: flex;
     list-style: none;
