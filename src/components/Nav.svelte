@@ -7,6 +7,7 @@
 
   
 </script>
+<nav>
 <div class="navbar">
     
     <div class="menu" >
@@ -21,13 +22,22 @@
             </div>
         </div>
         
-        <div class="burg"><Burg/></div>
+        <div class="burg">
+            <Burg/>
+        </div>
        
     <!-- <DropMenu /> -->
 	
     </div>
+</nav>
 <style>
-
+    nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    }
 
     /* <------------- SMALL SCREEN --------------> */
     @media screen and (max-width: 1005px){
@@ -41,7 +51,6 @@
     background-color: white;
     
     }
-
     .menu {
         display: none;
     }

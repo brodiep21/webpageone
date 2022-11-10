@@ -1,13 +1,15 @@
 <script >
-    import {slide} from 'svelte/transition';
+    import {fly} from 'svelte/transition';
+    import Fa from 'svelte-fa/src/fa.svelte'
+    import {faGithub, faLinkedin, faFacebook} from '@fortawesome/free-brands-svg-icons'
     $: showMenu = false;
 
-    function animate (node, options) {
-        if (showMenu) {
-            return options.fn(node, options);
-        }
-    }
-    
+    // function animate (node, options) {
+    //     if (showMenu) {
+    //         return options.fn(node, options);
+    //     }
+    // }
+    // in:animate={{fn: slide, duration:750, y:500}} out:animate={{fn: slide, duration:500, y:500}}
 </script>
 
     <label for="check">
@@ -17,11 +19,14 @@
             <span></span>
     </label>
     {#if showMenu}
-    <div class="dropMenu" in:animate={{fn: slide, duration:750, y:500}} out:animate={{fn: slide, duration:500, y:500}}>
+    <div class="dropMenu" transition:fly="{{y: -100, duration: 1000}}">
         <li class="nav"><a href="#about" class="navlink" >About Me</li>
         <li class="nav"><a href="#aspirations" class="navlink" >Aspirations</a></li>
         <li class="nav"><a href="#services" class="navlink" >Services</a></li>
         <li class="nav"><a href="#work" class="navlink" >Projects/Work</a></li>
+        <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>
+        <a href=https://www.linkedin.com/in/brodie-peif-871164230 rel="noreferrer" target="_blank"><Fa icon={faLinkedin} size=2.5x primaryColor='black'/></a>
+        <a href=https://www.facebook.com/bpeif rel="noreferrer" target="_blank"><Fa icon={faFacebook} size=2.5x primaryColor='black'/></a>
     </div>
     {/if}
 <style>

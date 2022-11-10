@@ -34,8 +34,9 @@
 .about_me {
     width: 100%;
     height: 300px;
-    margin-top:15px;
-    display: flex;
+    margin-top:100px;
+    display: grid;
+    z-index: -100;
 }
 .whitespace {
     position: absolute;
@@ -44,6 +45,7 @@
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    z-index: -100;
 }
 .rectangle {
   height: 55px;
@@ -54,19 +56,23 @@
   position:absolute;
   box-shadow: 0px 1px 5px rgb(119, 117, 117);
   text-align: center;
+  z-index: -100;
 }
 .about_me {
   display: flex;
   justify-content: center;
+  z-index: -100;
 }
 .about_me_title {
     position:absolute;
     display:flex;
+    z-index: -100;
 }
 .outer_rect {
     width: 75%;
     display: flex;
     justify-content: center;
+    z-index: -100;
 }
 
 h1.about_me_title {
@@ -79,6 +85,7 @@ h1.about_me_title {
    font-family: sans-serif;
    color: rgba(0, 0, 0, 0.652);
    font-size: 26px;
+   z-index: -100;
 }
 
 
@@ -104,7 +111,7 @@ h1.about_me_title {
 .about_me {
     width: 100%;
     height: 200px;
-    margin-top:15px;
+    margin-top:80px;
     display: flex;
 }
 h1.about_me_title {
@@ -149,7 +156,7 @@ h1.about_me_title {
 .about_me {
     width: 100%;
     height: 250px;
-    margin-top:15px;
+    margin-top:80px;
     display: flex;
 }
 h1.about_me_title {
