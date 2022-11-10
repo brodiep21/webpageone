@@ -1,10 +1,9 @@
-<script context="module">
-    export let showMenu = {false};
-    import {createEventDispatcher} from 'svelte'
+<script >
+    import Burg from './Burg.svelte'
 
-    
+   
+    $: showMenu  = false;
 </script>
-
 
 {#if showMenu}
 <div class="dropMenu">
@@ -14,6 +13,8 @@
     <li class="nav"><a href="#work" class="navlink" >Projects/Work</a></li>
 </div>
 {/if}
+
+
 <style>
      
     .dropMenu {

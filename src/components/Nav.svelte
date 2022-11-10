@@ -1,10 +1,10 @@
 <script>
     import Fa from 'svelte-fa/src/fa.svelte'
     import {faGithub, faLinkedin, faFacebook} from '@fortawesome/free-brands-svg-icons'
-    import DropMenu from './DropMenu.svelte'
+    // import DropMenu from './DropMenu.svelte'
     import Burg from './Burg.svelte'
 
-    let butts = true;
+
   
 </script>
 <div class="navbar">
@@ -22,9 +22,10 @@
         </div>
         
         <div class="burg"><Burg/></div>
-       <DropMenu showMenu={butts}/>
+       
+    <!-- <DropMenu /> -->
+	
     </div>
-
 <style>
 
 
@@ -37,12 +38,8 @@
     height: 60px;
     display: flex;
     position: relative;
-    }
-    .burg {
-        padding-left: 1.5em;
-        padding-top: .7em;
-        position:absolute;
-        z-index: 3;
+    background-color: white;
+    
     }
 
     .menu {
