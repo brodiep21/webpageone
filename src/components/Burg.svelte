@@ -24,10 +24,12 @@
         <li class="nav"><a href="#aspirations" class="navlink" >Aspirations</a></li>
         <li class="nav"><a href="#services" class="navlink" >Services</a></li>
         <li class="nav"><a href="#work" class="navlink" >Projects/Work</a></li>
-        <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>
+        <div class="icons"><a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>
         <a href=https://www.linkedin.com/in/brodie-peif-871164230 rel="noreferrer" target="_blank"><Fa icon={faLinkedin} size=2.5x primaryColor='black'/></a>
         <a href=https://www.facebook.com/bpeif rel="noreferrer" target="_blank"><Fa icon={faFacebook} size=2.5x primaryColor='black'/></a>
+      </div>
     </div>
+    
     {/if}
 <style>
 
@@ -102,13 +104,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     list-style: none;
     position: absolute;
     font-weight: 800;
-    font-size: larger;
+    font-size: 26px;
     background-color: #ffffffce;
-    text-align: center;
     z-index: 3;
-    transition: 1sec;
-    animation: ease-in;
-    -webkit-animation: ease-in;
+    text-align: center;
+    box-shadow:0px 1px#000000 
     }
 
     .dropMenu li a {
@@ -119,5 +119,12 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     }
     .dropMenu li a:hover {
         color:#3E92CC
+    }
+    .nav {
+      margin-bottom: 10px
+    }
+    .icons {
+      display: flex;
+      justify-content: space-around;
     }
 </style>

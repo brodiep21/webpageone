@@ -40,7 +40,7 @@
         color:#3E92CC
     }
 
-    @media screen and (min-width: 1006px) {
+    /* @media screen and (min-width: 1006px) {
    
-}
+} */
 </style>
