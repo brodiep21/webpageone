@@ -1,5 +1,6 @@
 <script>
     import Profilepic from '../img/profilepic.jpg'
+    import Image from '../img/s.png'
 </script>
 <section class="about_me" href=#about>
     
@@ -15,9 +16,50 @@
     
     
 </section>
-    
+<div class="anecdote"><h1>Full time employee by day, Crossfit coach in the afternoon, dedicated programmer by night</h1></div>
+<!-- <div class="box"></div> 
+<div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div> -->
 
 <style>
+.anecdote {
+    width: 95%;
+    text-align: center;
+}
+/* .box {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.box:hover::after {
+    opacity: 1;
+} */
 .profile_pic {
     border-radius: 20%;
     width: 225px;
@@ -51,7 +93,7 @@
   height: 55px;
   width: 75%;
   max-width: 800px;
-  background-color: #3E92CC;
+  background-color: var(--veridian);
   border-radius:1em;
   position:absolute;
   box-shadow: 0px 1px 5px rgb(119, 117, 117);

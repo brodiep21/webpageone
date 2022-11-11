@@ -1,5 +1,12 @@
 :root {
-    background: #ffffff;
+    background: var(--white);
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+
+    --white: #F5F5F5;
+    --veridian: #2D9F98;
+    --purple: #3B2EEF;
+    --grey: #747474;
+    --black: #333333;
 }

@@ -36,7 +36,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: var(--white);
     }
 
     /* <------------- SMALL SCREEN --------------> */
@@ -48,7 +48,7 @@
     height: 60px;
     display: flex;
     position: relative;
-    background-color: white;
+    background-color: var(--white);
     
     }
     .menu {
@@ -72,9 +72,9 @@
     position: relative;
     display: inline-block;
     font-size: 1.4em;
-    font-weight: 800;
+    font-weight:bolder;
     overflow: hidden;
-    background: linear-gradient(to right, #3E92CC, #3E92CC 50%, rgb(0, 0, 0) 50%);
+    background: linear-gradient(to right, var(--veridian),var(--veridian) 50%, rgb(0, 0, 0) 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -88,7 +88,7 @@
 .menu {
     display: flex;
     list-style: none;
-    column-gap: 2em;
+    column-gap: 4em;
     justify-content: fit-content;
 }
 
@@ -113,7 +113,7 @@
     height: 2px;
     bottom: 0px;
     left: 0;
-    background-color: #3E92CC;
+    background-color: var(--purple);
     transform-origin: center;
     transition: transform 0.3s ease-out;
 }
@@ -122,41 +122,6 @@
     transform: scaleX(1);
     transform-origin: center;
 }
-/* .box {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
 
-.box::after {
-  content: "";
-  border-radius: 5px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.box:hover {
-  -webkit-transform: scale(1.25, 1.25);
-  transform: scale(1.25, 1.25);
-}
-
-.box:hover::after {
-    opacity: 1;
-} */
 }
 </style>

@@ -16,8 +16,3 @@
 	<Footer/>
 	
 	
-<style>
-
-	
-	
-</style>
