@@ -16,22 +16,36 @@
     
     
 </section>
-<div class="anecdote"><h1>Full time employee by day, Crossfit coach in the afternoon, dedicated programmer by night</h1></div>
-<!-- <div class="box"></div> 
-<div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div> -->
+<div class="anecdote">
+    <div class="box"><img class="crossfit" src='https://christandpopculture.com/wp-content/uploads/2016/07/CrossFit.jpg' height=100% width=200px style="border-radius: 5px"alt="crossfit gym"></div>
+    <div class="box"></div> 
+    <h1>Full time employee by day, Crossfit coach in the afternoon, dedicated programmer by night</h1>
+    <div class="box"></div> 
+    <div class="box"></div> 
+
+</div>
+
+<!-- <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div> -->
 
 <style>
 .anecdote {
-    width: 95%;
+    
     text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(140deg, var(--purple) 0%, var(--veridian) 30%, var(--veridian) 80%, var(--purple) 99%);
+    /* min-height: 200px; */
+    box-shadow: 0px 1px 4px var(--grey);
+    display: flex;
 }
-/* .box {
+.anecdote h1 {
+    color: var(--white);
+}
+.box {
   position: relative;
-  display: inline-block;
   width: 200px;
   height: 200px;
   border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
   border-radius: 5px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -55,11 +69,12 @@
 .box:hover {
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
+  z-index: 1000;
 }
 
 .box:hover::after {
     opacity: 1;
-} */
+}
 .profile_pic {
     border-radius: 20%;
     width: 225px;
@@ -68,11 +83,6 @@
     position: relative;
     margin-right: 25%;
 }
-/* .profile_pic:hover {
-    box-shadow: 0px 6px 15px grey;
-    transform:scale(1.3);
-    z-index: 3;
-} */
 .about_me {
     width: 100%;
     height: 300px;
@@ -96,7 +106,7 @@
   background-color: var(--veridian);
   border-radius:1em;
   position:absolute;
-  box-shadow: 0px 1px 5px rgb(119, 117, 117);
+  box-shadow: 0px 1px 5px var(--grey);
   text-align: center;
   z-index: -100;
 }
@@ -144,10 +154,10 @@ h1.about_me_title {
   height: 45px;
   width: 75%;
   min-width: 375px;
-  background-color: #3E92CC;
+  background-color: var(--veridian);
   border-radius:1em;
   position:absolute;
-  box-shadow: 0px 1px 5px rgb(119, 117, 117);
+  box-shadow: 0px 1px 5px var(--grey);
   text-align: center;
 }
 .about_me {
@@ -189,10 +199,10 @@ h1.about_me_title {
   height: 55px;
   width: 70%;
   min-width: 350px;
-  background-color: #3E92CC;
+  background-color: var(--veridian);
   border-radius:1em;
   position:absolute;
-  box-shadow: 0px 1px 5px rgb(119, 117, 117);
+  box-shadow: 0px 1px 5px var(--grey);
   text-align: center;
 }
 .about_me {
@@ -216,7 +226,7 @@ h1.about_me_title {
     border-radius: 20%;
     width: 150px;
     height: 175px;
-    box-shadow: 0px 6px 15px  grey;
+    box-shadow: 0px 6px 15px  var(--grey);
     position: relative;
     margin-right: 65%;
 }
