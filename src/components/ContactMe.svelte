@@ -1,0 +1,11 @@
+<script>
+	import { text } from "svelte/internal";
+
+
+</script>
+
+
+<input type='text' class='Name'>
+<style>
+
+</style>
