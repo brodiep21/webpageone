@@ -11,10 +11,10 @@
 <div class="navbar">
     
     <div class="menu" >
-        <li class="nav_item"><a href="#about" class="navlink" >About Me</li>
-        <li class="nav_item"><a href="#aspirations" class="navlink" >Aspirations</a></li>
-        <li class="nav_item"><a href="#services" class="navlink" >Services</a></li>
-        <li class="nav_item"><a href="#work" class="navlink" >Projects/Work</a></li>
+        <li class="nav_item"><a href="#about" >About Me</li>
+        <li class="nav_item"><a href="#aspirations" >Services</a></li>
+        <li class="nav_item"><a href="#services" >Projects/Work</a></li>
+        <li class="nav_item"><a href="#contact">Contact Me</a></li>
             <div class="link_FA">
                 <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>
                 <a href=https://www.linkedin.com/in/brodie-peif-871164230 rel="noreferrer" target="_blank"><Fa icon={faLinkedin} size=2.5x primaryColor='black'/></a>
@@ -40,9 +40,9 @@
     }
 
     /* <------------- SMALL SCREEN --------------> */
-    @media screen and (max-width: 1005px){
+    @media screen and (max-width: 1159.9px){
     .navbar {
-    border-bottom-color: rgb(68, 65, 65);;
+    border-bottom-color: var(--grey);
     border-bottom: 1px solid;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.336);
     height: 60px;
@@ -60,20 +60,20 @@
 }
 
     /* <------------- LARGE SCREEN --------------> */
-@media screen and (min-width: 1006px) {
+@media screen and (min-width: 1160px) {
 .navbar {
-    color: rgb(68, 65, 65);
+    color: var(--grey);
     border-bottom: 1px solid;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.336);
-    height: 60px;
-    display: fit-content;
+    height: 65px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .navbar a {
     position: relative;
     display: inline-block;
-    font-size: 1.4em;
-    font-weight:bolder;
-    overflow: hidden;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: linear-gradient(to right, var(--veridian),var(--veridian) 50%, rgb(0, 0, 0) 50%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -89,7 +89,6 @@
     display: flex;
     list-style: none;
     column-gap: 4em;
-    justify-content: fit-content;
 }
 
 .nav_item {
@@ -110,12 +109,13 @@
     width: 100%;
     position: absolute;
     transform: scaleX(0);
-    height: 2px;
+    height: 3px;
     bottom: 0px;
+    border-radius: 2px;
     left: 0;
     background-color: var(--purple);
     transform-origin: center;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.5s ease-out
 }
 
 .link_FA :hover:after {

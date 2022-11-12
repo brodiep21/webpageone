@@ -1,12 +1,14 @@
 :root {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: var(--white);
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+    padding-left:3%;
+    padding-right:3%;
 
     --white: #F5F5F5;
-    --veridian: #2D9F98;
-    --purple: #3B2EEF;
-    --grey: #747474;
-    --black: #333333;
+    --veridian: #20bfb4;
+    --purple: #3b2eefcb;
+    --grey: #888888;
+    --black: #2c2c2c;
 }
