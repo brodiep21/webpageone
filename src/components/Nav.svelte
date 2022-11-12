@@ -14,7 +14,7 @@
         <li class="nav_item"><a href="#about" >About Me</li>
         <li class="nav_item"><a href="#aspirations" >Services</a></li>
         <li class="nav_item"><a href="#services" >Projects/Work</a></li>
-        <li class="nav_item"><a href="#contact">Contact Me</a></li>
+        <li class="nav_item"><a href="/contactme">Contact Me</a></li>
             <div class="link_FA">
                 <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>
                 <a href=https://www.linkedin.com/in/brodie-peif-871164230 rel="noreferrer" target="_blank"><Fa icon={faLinkedin} size=2.5x primaryColor='black'/></a>
