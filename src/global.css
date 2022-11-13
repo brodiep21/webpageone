@@ -1,15 +1,16 @@
 :root {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
     background: var(--white);
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding-left:3%;
     padding-right:3%;
-    font-weight: 700;
+    font-weight: 900;
 
     --white: #F5F5F5;
     --veridian: #20bfb4;
     --purple: #3b2eefcb;
     --grey: #888888;
     --black: #2c2c2c;
+    --playfair: @import url('https://fonts.googleapis.com/css?family=Playfair Display&display=swap');
 }

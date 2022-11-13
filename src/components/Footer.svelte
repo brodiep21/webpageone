@@ -5,11 +5,14 @@
 </script>
 
 <footer>
-    <a href='#top' class="top_arrow">
-        <button type="button" class="top" ><Fa icon={faArrowUp} size=2x primaryColor=#F5F5F5 />
-        </button>
-        
-    </a>
+    <div class="contact">
+        <div class="vailcoding"></div>
+        <a href='#top' class="top_arrow">
+            <button type="button" class="top" ><Fa icon={faArrowUp} size=2x primaryColor=#F5F5F5 />
+            </button>
+        </a>
+    </div>
+    
     
     <div class="vailcoder">Designed by
         <img class="emblem" src={vc} alt="vailcoding emblem"> 
@@ -20,8 +23,14 @@
 <style>
     footer {
         display: grid;
-        grid-template-columns: 55% 45%;
+        grid-template-columns: 1;
+        grid-template-rows: 50% 50%;
+        min-height: 250px;
         /* background: radial-gradient(circle,  var(--purple) 5%, var(--veridian) 99%); */
+    }
+    .contact {
+        background-color: var(--grey);
+        border-radius: 4px;
     }
     .top_arrow {
         margin-left: auto;
@@ -40,16 +49,16 @@
         cursor: pointer;
     }
     .vailcoder {
+        font-family: var(--playfair);
        margin-left:auto;
        padding-top: 1.2em;
        padding-right: 1em;
-       font-weight:100;
-       font-style: oblique;
-       font-size: larger;
+       font-weight:900;
+        text-transform: uppercase;
     }
     .emblem {
         width: 40px;
         height:40px;
-        position: absolute;
+        position: relative;
     }
 </style>

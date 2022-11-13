@@ -30,7 +30,8 @@
 
 
 .anecdote {
-    text-align: left;
+    text-align: center;
+    min-height: 500px;
     border-radius: 10px;
     background: radial-gradient(circle,  var(--purple) 5%, var(--veridian) 99%);
     box-shadow: 0px 1px 4px var(--black);
