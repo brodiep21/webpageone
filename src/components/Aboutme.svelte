@@ -1,6 +1,5 @@
 <script>
     import Profilepic from '../img/profilepic.jpg'
-    import Image from '../img/s.png'
 </script>
 <section class="about_me" href='#about' id='about'>
     
@@ -19,14 +18,13 @@
 <div class="anecdote">
     <!-- <div class="box"><img class="crossfit" src='https://christandpopculture.com/wp-content/uploads/2016/07/CrossFit.jpg' height=100% width=200px style="border-radius: 5px"alt="crossfit gym"></div>
     <div class="box"></div>  -->
-    <h1>A full time employee by day.  I am a Go developer, and freelance web developer by night. I also coach crossfit on my free time. I aspire to earn a job creating and maintaining code for a like-minded tech company.</h1>
+    <h1>A full time employee by day.  An aspiring backend developer, and freelance web developer by night. I also coach crossfit on my free time. I aspire to earn a job creating and maintaining code for a great tech company.</h1>
     <div class="anecdote2"><h2>"Don't focus on what you think you deserve, take aim at what you are willing to earn"</h2><h2 style="text-align: right">- David Goggins</h2></div>
     <!-- <div class="box"></div> 
     <div class="box"></div>  -->
 
 </div>
 
-<!-- <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div> -->
 
 <style>
 
@@ -35,7 +33,7 @@
     text-align: left;
     border-radius: 10px;
     background: radial-gradient(circle,  var(--purple) 5%, var(--veridian) 99%);
-    box-shadow: 0px 1px 4px var(--grey);
+    box-shadow: 0px 1px 4px var(--black);
     display: flex;
 }
 .anecdote2 {
@@ -43,11 +41,15 @@
     color:var(--black);
     padding-left: 8px;
 }
+.anecdote2 h2 {
+    font-weight: 100;
+}
 .anecdote h1 {
     color: var(--black);
     font-weight: 100;
     box-shadow: 3px 0px 0px 0px var(--black);
-    padding-left: 3px;
+    text-shadow: 0px 1px var(--grey);
+    padding-left: 10px;
 }
 /* .box {
   position: relative;
@@ -205,6 +207,7 @@ h1.about_me_title {
 }
 .anecdote h1 {
     box-shadow: 0px 3px 0px var(--black);
+    text-align: center;
 }
 }
 /* <---------------- SMALL SCREEN ----------------> */
@@ -252,7 +255,7 @@ h1.about_me_title {
     margin-right: 65%;
 }
 .anecdote {
-    box-shadow: 0px 1px 0px var(--black);
+    box-shadow: 0px 1px 3px var(--grey);
 }
 }
 </style>
