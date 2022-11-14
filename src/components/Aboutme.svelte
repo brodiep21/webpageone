@@ -15,11 +15,13 @@
     
     
 </section>
+
 <div class="anecdote">
-    <!-- <div class="box"><img class="crossfit" src='https://christandpopculture.com/wp-content/uploads/2016/07/CrossFit.jpg' height=100% width=200px style="border-radius: 5px"alt="crossfit gym"></div>
-    <div class="box"></div>  -->
-    <h1>A full time employee by day.  An aspiring backend developer, and freelance web developer by night. I also coach crossfit on my free time. I aspire to earn a job creating and maintaining code for a great tech company.</h1>
-    <div class="anecdote2"><h2>"Don't focus on what you think you deserve, take aim at what you are willing to earn"</h2><h2 style="text-align: right">- David Goggins</h2></div>
+    <h1 class= "metitle">About Me.</h1>
+    <h2 class="me1">Aspiring full-time developer, I design websites for small companies and work on backend developer projects with mentors from bluemodus and greymatter.</h2>
+    <div class="learnmore"><a href="/aboutme">Learn More ></a></div>
+    <div class="quote">
+       <h2>"Don't focus on what you think you deserve, take aim at what you are willing to earn"</h2><h2 style="text-align: right">- David Goggins</h2></div>
     <!-- <div class="box"></div> 
     <div class="box"></div>  -->
 
@@ -32,26 +34,53 @@
 .anecdote {
     text-align: center;
     min-height: 500px;
-    border-radius: 10px;
-    background: radial-gradient(circle,  var(--purple) 5%, var(--veridian) 99%);
+    border-radius: 5px;
+    /* background: radial-gradient(circle,  var(--purple) 5%, var(--veridian) 99%); */
+    background: var(--purple);
     box-shadow: 0px 1px 4px var(--black);
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
 }
-.anecdote2 {
+.metitle{
+    font-size: 3rem;
+}
+.me1 {
+    padding-left: 3rem;
+    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: var(--black);
+}
+.learnmore {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    padding-top: 8rem;
+}
+.learnmore a {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ /* .learnmore a:after {
+    position:absolute;
+    width: 100%;
+    transform: scaleX()
+ } */
+.quote {
+    padding-top: 1rem;
     text-align: left;
     color:var(--black);
     padding-left: 8px;
-}
-.anecdote2 h2 {
     font-weight: 100;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+
 }
-.anecdote h1 {
-    color: var(--black);
-    font-weight: 100;
-    box-shadow: 3px 0px 0px 0px var(--black);
-    text-shadow: 0px 1px var(--grey);
-    padding-left: 10px;
-}
+
 /* .box {
   position: relative;
   width: 200px;
@@ -204,11 +233,22 @@ h1.about_me_title {
     border-radius: 10px;
     background: radial-gradient(circle,  var(--purple) 5%, var(--veridian) 99%);
     box-shadow: 0px 1px 4px var(--grey);
-    display: block;
+    /* display: block; */
 }
 .anecdote h1 {
-    box-shadow: 0px 3px 0px var(--black);
-    text-align: center;
+    grid-column-end: 3;
+}
+.me1 {
+    /* padding-left: 3rem; */
+    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: var(--black);
+}
+.learnmore {
+    padding-left: 15px;
 }
 }
 /* <---------------- SMALL SCREEN ----------------> */
@@ -257,6 +297,17 @@ h1.about_me_title {
 }
 .anecdote {
     box-shadow: 0px 1px 3px var(--grey);
+}
+.quote {
+    padding-top: 1rem;
+    text-align: left;
+    color:var(--black);
+    padding-left: 8px;
+    font-weight: 100;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+
 }
 }
 </style>

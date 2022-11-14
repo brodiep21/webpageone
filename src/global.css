@@ -1,5 +1,6 @@
 :root {
-    @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+    /* @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap"); */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: var(--white);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,10 +8,11 @@
     padding-right:3%;
     font-weight: 900;
 
+    
     --white: #F5F5F5;
     --veridian: #20bfb4;
-    --purple: #3b2eefcb;
+    --purple: #3c31d3cb;
     --grey: #888888;
-    --black: #2c2c2c;
-    --playfair: @import url('https://fonts.googleapis.com/css?family=Playfair Display&display=swap');
+    --black: #1d1d1d;
+    --playfair: 
 }
