@@ -8,8 +8,8 @@
 
 <div class="dropMenu" transition:fly="{{y: -100, duration: 1000}}">
     <li class="nav"><a href="#about" class="navlink" >About Me</li>
-    <li class="nav"><a href="#aspirations" class="navlink" >Services</a></li>
-    <li class="nav"><a href="#services" class="navlink" >Projects/Work</a></li>
+    <li class="nav"><a href="#services" class="navlink" >Services</a></li>
+    <li class="nav"><a href="#projects" class="navlink" >Projects/Work</a></li>
     <li class="nav"><a href="mailto:bpeif21@gmail.com" class="navlink" >Contact Me</a></li>
         <div class="icons">
             <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>

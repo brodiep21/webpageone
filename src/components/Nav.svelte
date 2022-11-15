@@ -1,7 +1,6 @@
 <script>
     import Fa from 'svelte-fa/src/fa.svelte'
     import {faGithub, faLinkedin, faFacebook} from '@fortawesome/free-brands-svg-icons'
-    // import DropMenu from './DropMenu.svelte'
     import Burg from './Burg.svelte'
 
 
@@ -12,8 +11,8 @@
     
     <div class="menu" >
         <li class="nav_item"><a href="#about" >About Me</li>
-        <li class="nav_item"><a href="#aspirations" >Services</a></li>
-        <li class="nav_item"><a href="#services" >Projects/Work</a></li>
+        <li class="nav_item"><a href="#services" >Services</a></li>
+        <li class="nav_item"><a href="#projects" >Projects/Work</a></li>
         <li class="nav_item"><a href="mailto:bpeif21@gmail.com">Contact Me</a></li>
             <div class="link_FA">
                 <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>
@@ -75,7 +74,7 @@
     display: inline-block;
     font-size: 1.5em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background: linear-gradient(to right, var(--veridian),var(--veridian) 50%, rgb(0, 0, 0) 50%);
+    background: linear-gradient(to right, var(--orange),var(--orange) 50%, rgb(0, 0, 0) 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -114,7 +113,7 @@
     bottom: 0px;
     border-radius: 2px;
     left: 0;
-    background-color: var(--purple);
+    background-color: var(--red);
     transform-origin: center;
     transition: transform 0.5s ease-out
 }

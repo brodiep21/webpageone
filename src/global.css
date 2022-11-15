@@ -4,15 +4,16 @@
     background: var(--white);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-left:3%;
-    padding-right:3%;
+    padding-left:2%;
+    padding-right:2%;
     font-weight: 900;
 
     
     --white: #F5F5F5;
-    --veridian: #20bfb4;
-    --purple: #3c31d3cb;
+    --orange: #FF9F1C;
+    --lorange: #ffd324;
+    --teal: #2EC4B6;
     --grey: #888888;
     --black: #1d1d1d;
-    --playfair: 
+    --red: #c72f17;
 }
