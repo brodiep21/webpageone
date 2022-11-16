@@ -1,6 +1,9 @@
 <script>
+	import Fa from 'svelte-fa/src/fa.svelte'
+
     import Profilepic from '../img/profilepic.jpg'
     import background from '../img/hellot.png'
+    import {faFileLines} from '@fortawesome/free-solid-svg-icons'
 </script>
 <section class="about_me" href='#about' id='about'>
     
@@ -25,6 +28,7 @@
     
     <h2 class="me1">Aspiring full-time developer, I design websites for small companies and work on backend developer projects with mentors from bluemodus and greymatter.</h2>
     <div class="learnmore"><a href="/aboutme">Learn More ></a></div>
+    <div class="doc"><button on:click={ () => window.open('https://docs.google.com/document/d/1q8Du_bYL3ckKOHOhYog7Qqp3MvruETFn/edit?usp=sharing&ouid=116822994425715327585&rtpof=true&sd=true')} ><Fa icon={faFileLines} size=2x primaryColor=#f5f5f5/> View My Resume</button></div>
     <!-- <div class="quote">
        <h2>"Don't focus on what you think you deserve, take aim at what you are willing to earn"</h2><h2 style="text-align: right">- David Goggins</h2></div> -->
        
@@ -192,7 +196,25 @@ h1.about_me_title {
    font-weight: 100;
 }
 
+.doc {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    padding-top: 7.5rem;
+}
+.doc button {
+    background-color:rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    color: var(--white);
+    font-size: 1.1rem;
+    /* font-weight:500; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+}
+.doc button:hover {
+    background-color: #dbf3f1b4;
+    border-radius: 5px;
+    cursor: pointer;
 
+}
 /* <---------------- PHONE SCREEN ----------------> */
 @media screen and (max-width: 450px) {
     .hello img{
@@ -246,7 +268,6 @@ h1.about_me_title {
 }
 .anecdote {
     text-align: left;
-    border-radius: 10px;
     background: var(--teal);
 }
 .anecdote h1 {
@@ -262,6 +283,7 @@ h1.about_me_title {
     color: var(--black);
 }
 .learnmore {
+    grid-column-start: 1;
     grid-column-end: 4;
 }
 

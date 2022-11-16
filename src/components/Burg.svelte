@@ -58,7 +58,7 @@ input[type="checkbox"]{
 input[type="checkbox"]:checked ~ span:nth-of-type(1){
   transform-origin:bottom;
   width: 50%;
-  background-color: rgba(255, 0, 0, 0.812);
+  background-color: var(--red);
   transform:rotatez(45deg) translate(3px,-2px)
 }
 
@@ -67,7 +67,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(2){
   
   transform-origin:top;
   width: 100%;
-  background-color: rgba(255, 0, 0, 0.812);
+  background-color: var(--red);
   transform:rotatez(-45deg)
 }
 
@@ -76,7 +76,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   
   transform-origin:bottom;
   width:50%;
-  background-color: rgba(255, 0, 0, 0.812);
+  background-color: var(--red);
   transform: translate(21px,-4px) rotatez(45deg);
 
 }

@@ -12,7 +12,8 @@
         </div>
         <div class="services2"></div>
     </div>
-    <div class="filler"></div>
+    <div class="carousel"></div>
+    <div class="background"></div>
 </section>
 <style>
 .servicesection {
@@ -29,9 +30,9 @@
 /* .services h2 {
 
 } */
-.filler {
-    background: url('../img/background2.png');
-    background-size: cover;
+.carousel {
+    background: url('../img/devpic.svg');
+    background-size: contain;
     background-repeat: no-repeat;
     width: 55%;
 }
