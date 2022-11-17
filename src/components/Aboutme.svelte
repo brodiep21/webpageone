@@ -3,7 +3,7 @@
 
     import Profilepic from '../img/profilepic.jpg'
     import background from '../img/hellot.png'
-    import {faFileLines} from '@fortawesome/free-solid-svg-icons'
+    import {faFileLines, faAngleRight} from '@fortawesome/free-solid-svg-icons'
 </script>
 <section class="about_me" href='#about' id='about'>
     
@@ -27,8 +27,8 @@
     <h1 class= "metitle">About Me.</h1>
     
     <h2 class="me1">Aspiring full-time developer, I design websites for small companies and work on backend developer projects with mentors from bluemodus and greymatter.</h2>
-    <div class="learnmore"><a href="/aboutme">Learn More ></a></div>
-    <div class="doc"><button on:click={ () => window.open('https://docs.google.com/document/d/1q8Du_bYL3ckKOHOhYog7Qqp3MvruETFn/edit?usp=sharing&ouid=116822994425715327585&rtpof=true&sd=true')} ><Fa icon={faFileLines} size=2x primaryColor=#f5f5f5/> View My Resume</button></div>
+    <div class="learnmore"><a href="/aboutme">Learn More</a></div>
+    <div class="doc"><button on:click={ () => window.open('https://docs.google.com/document/d/1q8Du_bYL3ckKOHOhYog7Qqp3MvruETFn/edit?usp=sharing&ouid=116822994425715327585&rtpof=true&sd=true')}> View My Resume</button></div>
     <!-- <div class="quote">
        <h2>"Don't focus on what you think you deserve, take aim at what you are willing to earn"</h2><h2 style="text-align: right">- David Goggins</h2></div> -->
        
@@ -76,12 +76,17 @@
     grid-row-start: 3;
     padding-top: 8rem;
     padding-left: 1rem;
+    
 }
 .learnmore a {
     color: var(--white);
     font-size: 1.4rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-underline-offset: .6rem;
+    transition: .5s ease-in-out;
+}
+.learnmore :hover {
+    color: var(--black);
 }
  /* .learnmore a:after {
     position:absolute;
@@ -199,21 +204,25 @@ h1.about_me_title {
 .doc {
     grid-column-start: 3;
     grid-row-start: 3;
-    padding-top: 7.5rem;
+    padding-top: 7.3rem;
 }
 .doc button {
-    background-color:rgba(255, 255, 255, 0);
-    border-color: rgba(255, 255, 255, 0);
+    background-color: #f5f5f50e;
+    border-radius:30px;
     color: var(--white);
-    font-size: 1.1rem;
-    /* font-weight:500; */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    border-color: var(--white);
+    border: 2px solid var(--white);
+    font-size: 1.4rem;
+    font-weight:700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 15rem;
+    height: 3rem;
+    transition: .5s ease-in-out;
 }
 .doc button:hover {
-    background-color: #dbf3f1b4;
-    border-radius: 5px;
     cursor: pointer;
-
+    background-color: var(--black);
+    border: 2px solid var(--black);
 }
 /* <---------------- PHONE SCREEN ----------------> */
 @media screen and (max-width: 450px) {

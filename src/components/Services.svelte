@@ -1,7 +1,20 @@
 <script>
+    import {fade} from 'svelte/transition'
+
     const carousel = [
-        '../img'
-    ]
+        '../img/devpic.svg',
+        '../img/devpic2.svg',
+        '../img/devpic3.svg'
+    ];
+    let index = 0;
+
+    function slides () {
+        let i;
+        for (i = 0; i < carousel.length; i++) {
+            setTimeout(i++, 2000);
+        }
+    }
+
 </script>
                                                                                        
 <section class="servicesection" href=#services id="services">
@@ -12,10 +25,16 @@
         </div>
         <div class="services2"></div>
     </div>
-    <div class="carousel"></div>
+    <div class="carousel">
+        {#each [carousel[index]] as src (index)}
+        <img transition:fade {src} alt="developer illustrations">
+        {/each}
+    </div>
     <div class="background"></div>
 </section>
+
 <style>
+
 .servicesection {
     display: flex;
 }
@@ -37,3 +56,4 @@
     width: 55%;
 }
 </style>
+
