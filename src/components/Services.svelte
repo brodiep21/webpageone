@@ -1,19 +1,13 @@
 <script>
-    import {fade} from 'svelte/transition'
+    // import {fade} from 'svelte/transition'
+    import {devpic} from '../img/devpic.svg'
 
-    const carousel = [
-        '../img/devpic.svg',
-        '../img/devpic2.svg',
-        '../img/devpic3.svg'
-    ];
-    let index = 0;
+    // const picture = [
+    //     '../img/devpic.svg',
+    //     '../img/devpic2.svg',
+    //     '../img/devpic3.svg'
+    // ];
 
-    function slides () {
-        let i;
-        for (i = 0; i < carousel.length; i++) {
-            setTimeout(i++, 2000);
-        }
-    }
 
 </script>
                                                                                        
@@ -23,14 +17,11 @@
             <h3>Fit your needs</h3>
             <h1>My <br> Services.</h1>
         </div>
+        <div class="picture"><img src={devpic} alt="illustration of developer"></div>
         <div class="services2"></div>
     </div>
-    <div class="carousel">
-        {#each [carousel[index]] as src (index)}
-        <img transition:fade {src} alt="developer illustrations">
-        {/each}
-    </div>
-    <div class="background"></div>
+    
+    <!-- <div class="background"></div> -->
 </section>
 
 <style>
@@ -40,20 +31,39 @@
 }
 .services {
     background: var(--lorange);
-    width: 45%;
+    width: 100%;
+    display: flex;
 }
 .services1 h1 {
     font-size: 4rem;
     offset: left 5px;
 }
-/* .services h2 {
+.background {
+    width: 100%;
 
-} */
-.carousel {
-    background: url('../img/devpic.svg');
+}
+.picture {
+    width: 100px;
+}
+.picture img{
     background-size: contain;
     background-repeat: no-repeat;
-    width: 55%;
+    transition: .3s ease-in-out;
+    height: 80px;
+    width: 80px;
+}
+/* .picture:hover + .background{
+    background-color: var(--black);
+    width: 100px;
+} */
+
+@media screen and (max-width: 650px) {
+    .services {
+        padding-left: 5px;
+    }
+    .services h1 {
+        font-size: 39px;
+    }
 }
 </style>
 

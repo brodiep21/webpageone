@@ -204,7 +204,7 @@ h1.about_me_title {
 .doc {
     grid-column-start: 3;
     grid-row-start: 3;
-    padding-top: 7.3rem;
+    padding-top: 7.1rem;
 }
 .doc button {
     background-color: #f5f5f50e;
@@ -217,12 +217,12 @@ h1.about_me_title {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 15rem;
     height: 3rem;
-    transition: .5s ease-in-out;
 }
 .doc button:hover {
     cursor: pointer;
-    background-color: var(--black);
-    border: 2px solid var(--black);
+    color: var(--black);
+    border: 2px solid var(--white);
+    background-color: var(--white);
 }
 /* <---------------- PHONE SCREEN ----------------> */
 @media screen and (max-width: 450px) {
@@ -295,7 +295,15 @@ h1.about_me_title {
     grid-column-start: 1;
     grid-column-end: 4;
 }
-
+.doc {
+    grid-column-start: 2;
+    padding-left: 7rem;
+}
+.doc button {
+    width: 8rem;
+    font-size: medium;
+    
+}
 }
 /* <---------------- SMALL SCREEN ----------------> */
 @media screen and (min-width: 451px) and (max-width: 1000px){

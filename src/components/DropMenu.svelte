@@ -46,7 +46,7 @@
     transition: .5sec;
 }
 .dropMenu li a:hover {
-    color:var(--purple)
+    color:var(--red)
 }
 .icons {
     display: flex;
