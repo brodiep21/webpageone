@@ -36,6 +36,7 @@
     top: 0;
     left: 0;
     background-color: var(--white);
+    z-index: 100;
     }
 
     /* <------------- SMALL SCREEN --------------> */
