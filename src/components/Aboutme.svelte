@@ -20,7 +20,7 @@
     
 </section>
 <div class="hello">
-    <div class="box"></div> 
+    <!-- <div class="box"></div>  -->
 <div class="anecdote">
    <img class="hello" src={background} alt="hello text">
    
@@ -42,7 +42,7 @@
     height: 300px;
     padding-top:100px;
     display: grid;
-    z-index: -100;
+    z-index: -1;
 }
 .hello img{
     height: 40rem;
@@ -57,6 +57,7 @@
     grid-template-rows: 30% 30% 30%;
     background: var(--teal);
     overflow: hidden;
+    z-index: 3;
 }
 .metitle{
     font-size: 3rem;
