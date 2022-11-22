@@ -3,6 +3,7 @@
 	import Fa from 'svelte-fa/src/fa.svelte';
 	import { onMount} from 'svelte/internal';
     import vc from '../img/vc.jpg'
+    import {faGithub, faLinkedin, faFacebook} from '@fortawesome/free-brands-svg-icons'
 
    let time = new Date();
 
@@ -19,6 +20,19 @@
             clearInterval(interval);
         };
     });
+    $: color = 'black'
+    function valueCheck (val) {
+        if (val < 10) {
+            return '0' + val
+        } 
+        else {
+            return val
+        }
+    }
+    function colorShift () {
+        color = '#2EC4B6'
+        return color
+    }
 </script>
 
 <footer>
@@ -37,27 +51,38 @@
             <div class="phone">
                 <h2>1-970-685-8088</h2>
                 <h3>
-                    {#if (hours-12 >= 0)}
-                    {hours -12}{#if (minutes < 10)}
-                        :0{minutes}:{seconds} PM
-                        {:else}
-                        :{minutes}:{seconds} PM
-                        {/if}
+                    {#if (hours-12 >= 1 && hours-12 <= 9)}
+                    {0}{hours - 12}:{valueCheck(minutes)}:{valueCheck(seconds)} PM
+                    {:else if (hours-12 > 10)}
+                    {hours-12}:{valueCheck(minutes)}:{valueCheck(seconds)} PM
                     {:else}
-                    {hours}:{minutes}:{seconds}AM
+                    {hours}:{valueCheck(minutes)}:{valueCheck(seconds)} AM
                     {/if}
                         <br>Images from 
                         <a href=https://undraw.co/illustrations rel="noreferrer" target="_blank">undraw.co</a>
                 </h3>
             </div>
+            <div class="address">
+                <h3>Cape Coral <br> Florida, 33993</h3>
+            </div>
         </div>
-        
     </div>
     
     
 
     <div class="emblem">
         <img class="logo" src={vc} alt="vailcoding emblem"> 
+        <!-- <div class="intouch"> -->
+            <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank">
+                <Fa icon={faGithub} size=2.5x primaryColor= 'black'/>
+            </a>
+            <a href=https://www.linkedin.com/in/brodie-peif-871164230 rel="noreferrer" target="_blank">
+                <Fa icon={faLinkedin} size=2.5x primaryColor='black'/>
+            </a>
+            <a href=https://www.facebook.com/bpeif rel="noreferrer" target="_blank">
+                <Fa icon={faFacebook} size=2.5x primaryColor='black' primaryOpacity={.2}/>
+            </a>
+        <!-- </div> -->
     </div>
        
 </footer>
@@ -71,7 +96,6 @@
     .fmain {
         background-color: var(--red);
         color: var(--white);
-        padding-left: 1rem;
     }
    .contact_arrow {
     text-align: right;
@@ -89,8 +113,9 @@
     }
     .contact_info {
         display: grid;
-        grid-template-columns: 30% 30% 30%;
-        /* grid-template */
+        grid-template-columns: 33.3% 33.3% 33.4%;
+        justify-content: center;
+        text-align:center;
     }
     .name {
         margin-bottom: -1.5rem;
@@ -105,6 +130,11 @@
     .top:hover {
         transform: scale(1.3);
         cursor: pointer;
+    }
+    .emblem {
+        background-color: var(--lorange);
+        justify-content: space-around;  
+        display: flex;
     }
     .emblem .logo{
         width: 40px;
@@ -123,6 +153,9 @@
     }
     .phone a {
         color: var(--white);
+    }
+    .address {
+        padding-top: 1rem;
     }
 /* <---------------PHONE SCREEN -----------> */
 @media screen and (max-width: 800px) {

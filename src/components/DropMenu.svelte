@@ -15,7 +15,6 @@
             <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>
             <a href=https://www.linkedin.com/in/brodie-peif-871164230 rel="noreferrer" target="_blank"><Fa icon={faLinkedin} size=2.5x primaryColor='black'/></a>
             <a href=https://www.facebook.com/bpeif rel="noreferrer" target="_blank"><Fa icon={faFacebook} size=2.5x primaryColor='black'/></a>
-            
         </div>
 </div>
 
@@ -46,7 +45,7 @@
     transition: .5sec;
 }
 .dropMenu li a:hover {
-    color:var(--red)
+    color:var(--purple)
 }
 .icons {
     display: flex;
