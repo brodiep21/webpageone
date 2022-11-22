@@ -166,5 +166,9 @@
     .emblem {
         background-color: var(--lorange)
     }
+    .contact_arrow {
+        text-align:center;
+        margin-right: 0rem;
+    }
 }
 </style>
