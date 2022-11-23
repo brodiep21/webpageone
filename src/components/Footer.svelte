@@ -30,6 +30,8 @@
         }
     }
     function colorShift () {
+        let kk = document.getElementById(boo)
+
         color = '#2EC4B6'
         return color
     }
@@ -39,7 +41,7 @@
     <div class="fmain">
         <div class="contact_arrow">
             <a href='#top' class="top_arrow">
-                <button type="button" class="top" ><Fa icon={faArrowUp} size=2x primaryColor=#F5F5F5 />
+                <button type="button" class="top" ><Fa icon={faArrowUp} size=2x primaryColor='black' />
                 </button>
             </a>
         </div>
@@ -90,7 +92,8 @@
 <style>
     footer {
         display: grid;
-        grid-template-columns: 75% 25%;
+        grid-template-columns: 100%;
+        grid-template-rows: 2;
         min-height: 200px;
     }
     .fmain {
@@ -98,18 +101,18 @@
         color: var(--white);
     }
    .contact_arrow {
-    text-align: right;
-    margin-top: 1rem;
-    margin-right: 1rem;
+    text-align: center;
+    margin-top: .5rem;
    }
     .contact_arrow button {
         border-radius: 20px;
         width: 50px;
         height: 50px;
-        background-color: var(--orange);
+        background-color: rgba(245, 245, 245, 0);
         border: none;
-        transition: .15s ease-in;
+        transition: .25s ease-in;
         position: relative;
+        transform: translateY(.5rem);
     }
     .contact_info {
         display: grid;
@@ -130,15 +133,21 @@
     .top:hover {
         transform: scale(1.3);
         cursor: pointer;
+        
     }
     .emblem {
-        background-color: var(--lorange);
-        justify-content: space-around;  
+        background-color: var(--teal);
+        justify-content: space-evenly;  
         display: flex;
+        min-height: 5rem;
     }
     .emblem .logo{
-        width: 40px;
-        height:40px;
+        width: 50px;
+        height:50px;
+        margin-top: 1.0rem;
+    }
+    .emblem a {
+        margin-top: 1.4rem;
     }
     .phone {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -159,16 +168,9 @@
     }
 /* <---------------PHONE SCREEN -----------> */
 @media screen and (max-width: 800px) {
-    footer {
-        grid-template-columns: 100%;
-        grid-template-rows: 2;
-    }
-    .emblem {
-        background-color: var(--lorange)
-    }
-    .contact_arrow {
+    /* .contact_arrow {
         text-align:center;
         margin-right: 0rem;
-    }
+    } */
 }
 </style>
