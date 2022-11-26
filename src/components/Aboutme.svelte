@@ -64,7 +64,6 @@
     grid-column-start: 2;
 }
 .me1 {
-    padding-left: 3rem;
     align-self: center;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -194,7 +193,7 @@ h1.about_me_title {
    width:100% inherit;
    margin-left: 60% ;
    text-shadow: 0px 1px 1px rgba(44, 44, 44, 0.341);
-   color: rgba(0, 0, 0, 0.652);
+   color: var(--black);
    font-size: 26px;
    z-index: -100;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -265,7 +264,7 @@ h1.about_me_title {
    margin-left: 48% ;
    text-shadow: 0px 1px 1px rgba(44, 44, 44, 0.126);
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   color: rgba(0, 0, 0, 0.652);
+   color: var(--black);
    font-size: 22px;
 }
 .profile_pic {
@@ -284,6 +283,7 @@ h1.about_me_title {
     grid-column-end: 4;
 }
 .me1 {
+    padding-left: 3rem;
     padding-top: 5rem;
     align-self: center;
     grid-column-start: 1;

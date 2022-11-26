@@ -41,7 +41,7 @@
     width: 100%;
     display: flex;
     min-height:30rem;
-    color: rgba(48, 48, 48, 0.9);
+    color: var(--black);
 }
 .services1 {
     margin-top: 3rem;
