@@ -2,6 +2,7 @@
 
 
 </script>
+<section class="myprojects" id="projects">
 <div class="background">
     
     <div class="projects">
@@ -11,6 +12,7 @@
         <a href=/projects>Take a Peek</a> 
     </div>
 </div>
+</section>
 
 <style>
 
