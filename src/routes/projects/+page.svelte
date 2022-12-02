@@ -5,12 +5,13 @@
 
 </script>
     <div class="background">
-        <Fa icon={faTriangleExclamation}></Fa>This area is currently under programming construction. Come back soon! <Fa icon={faTriangleExclamation}></Fa>
+        <Fa icon={faTriangleExclamation}></Fa>This area is currently under construction. Come back soon! <Fa icon={faTriangleExclamation}></Fa>
         
     </div>
     <img class='pic' src={photo} alt="construction logo" >
 
-    <button class='home'><a href='/'><Fa icon={faHouse}></Fa><br>Home</a></button>
+    <form action='/'><button class='home'><Fa icon={faHouse} size=2x></Fa><br>Home</button></form>
+
 <style>
 .background {
     display: flex;
@@ -27,7 +28,24 @@
 }
 .home {
     display: block;
+    width: 5rem;
+    height: 5rem;
     margin: 0 auto;
+    border: none;
+    border-radius: 20%;
+    background: var(--red);
+    box-shadow: 0 8px #999;
+    color: var(--white);
+    font-size: large;
+    text-decoration: none;    
+}
+.home:hover {
+    cursor: pointer;
+    background: #ff2e0eeb;
+}
+.home:active{
+    transform: translateY(2px);
+    box-shadow: 0 5px #666;
 }
 
 /* <---------------- PHONE/SMALL SCREEN ----------------> */
@@ -38,6 +56,10 @@
     }
     .pic {
         position: relative;
+    }
+    .home {
+    width: 4rem;
+    height: 4rem;
     }
 }
 </style>
