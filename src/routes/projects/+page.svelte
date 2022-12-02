@@ -4,13 +4,16 @@
     import {faTriangleExclamation, faHouse} from '@fortawesome/free-solid-svg-icons'
 
 </script>
+
     <div class="background">
         <Fa icon={faTriangleExclamation}></Fa>This area is currently under construction. Come back soon! <Fa icon={faTriangleExclamation}></Fa>
-        
     </div>
+    <form action='/'><button class='home'><Fa icon={faHouse} size=2x></Fa><br>Home</button></form>
+    <br>
+    <br>
     <img class='pic' src={photo} alt="construction logo" >
 
-    <form action='/'><button class='home'><Fa icon={faHouse} size=2x></Fa><br>Home</button></form>
+    
 
 <style>
 .background {
@@ -20,7 +23,7 @@
     text-align: center;
     font-size: 2rem;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 .pic {
     width: 100%;
