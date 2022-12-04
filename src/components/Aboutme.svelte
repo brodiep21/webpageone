@@ -60,11 +60,12 @@
     z-index: 3;
 }
 .metitle{
-    font-size: 3rem;
+    font-size: 4rem;
     grid-column-start: 2;
 }
 .me1 {
     align-self: center;
+    font-size: 1.7rem;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -226,6 +227,9 @@ h1.about_me_title {
 }
 /* <---------------- PHONE SCREEN ----------------> */
 @media screen and (max-width: 450px) {
+    .metitle{
+    font-size: 3rem;
+}
     .hello img{
     height: 20rem;
     width: 300%;
@@ -285,6 +289,7 @@ h1.about_me_title {
 .me1 {
     padding-left: 3rem;
     padding-top: 5rem;
+    font-size: 1.4rem;
     align-self: center;
     grid-column-start: 1;
     grid-column-end: 4;

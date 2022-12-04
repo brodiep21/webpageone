@@ -4,16 +4,33 @@
     import Burg from './Burg.svelte'
 
 
-  
+    export let first = {
+        name: 'About Me',
+        ref: '#about'
+    }
+    export let second = {
+        name:'Services',
+        ref: '#services'
+    }
+
+    export let third = {
+        name:'Projects/Work',
+        ref: '#projects'
+    }
+
+    export let fourth =  {
+    name:'Contact Me', 
+    ref: 'mailto:bpeif21@gmail.com'
+    }
 </script>
 <nav href='#top'>
 <div class="navbar">
     
     <div class="menu" >
-        <li class="nav_item"><a href="#about" >About Me</li>
-        <li class="nav_item"><a href="#services" >Services</a></li>
-        <li class="nav_item"><a href="#projects" >Projects/Work</a></li>
-        <li class="nav_item"><a href="mailto:bpeif21@gmail.com">Contact Me</a></li>
+        <li class="nav_item"><a href={first.ref} >{first.name}</li>
+        <li class="nav_item"><a href={second.ref} >{second.name}</a></li>
+        <li class="nav_item"><a href={third.ref} >{third.name}</a></li>
+        <li class="nav_item"><a href={fourth.ref}>{fourth.name}</a></li>
             <div class="link_FA">
                 <a href=https://github.com/brodiep21 rel="noreferrer" target="_blank"><Fa icon={faGithub} size=2.5x primaryColor= 'black'/></a>
                 <a href=https://www.linkedin.com/in/brodie-peif-871164230 rel="noreferrer" target="_blank"><Fa icon={faLinkedin} size=2.5x primaryColor='black'/></a>

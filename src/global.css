@@ -17,4 +17,6 @@
     --grey: #888888;
     --black: #1d1d1d;
     --red: #fd5b42;
+    --montserrat: @import url('https://fonts.cdnfonts.com/css/montserrat');
+    --playfair: @import url('https://fonts.cdnfonts.com/css/playfair-display');
 }

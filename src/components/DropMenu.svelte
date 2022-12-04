@@ -3,7 +3,6 @@
     import Fa from 'svelte-fa/src/fa.svelte'
     import {faGithub, faLinkedin, faFacebook} from '@fortawesome/free-brands-svg-icons'
 
-    // export let showMenu = false;
 </script>
 
 <div class="dropMenu" transition:fly="{{y: -100, duration: 1000}}">
