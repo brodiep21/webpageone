@@ -2,6 +2,7 @@
     import Nav from "/src/components/Nav.svelte"
     import Fa from 'svelte-fa'
     import {faHouse} from '@fortawesome/free-solid-svg-icons'
+    import fishing from '/src/img/fishing.jpg'
 
     let first ={
         name:'Home',
@@ -25,7 +26,7 @@
     <div class="intro">
 
         <div class="vidtext">I love Crossfit, it's become a passion of mine. A healthy body promotes a healthy mind.</div>
-        <!-- <div class="vid1 video">  
+        <div class="vid1 video">  
             <video src='/src/img/crossfitworkout.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
         </div>
         <div class="vid2 video">
@@ -33,12 +34,12 @@
         </div>
         <div class="vid3 video">
             <video src='/src/img/crossfitworkout2.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
-        </div> -->
+        </div>
     </div>
-<!-- </div> -->
+<!-- </div> -->s
 
 <div class="pictures">
-    <img src='/src/img/fishing.jpg' alt="brodie holding a fish">
+    <img src={fishing} alt="brodie holding a fish">
 </div>
 
 <style>
