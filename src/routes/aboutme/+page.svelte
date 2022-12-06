@@ -20,24 +20,23 @@
     <h2>Brodie Peif</h2>
     <h1>About me.</h1>
 </div>
-<!-- <div class='background'> -->
-    <Nav first={first} second={second}/>
-    
-    <div class="intro">
 
-        <div class="vidtext">I love Crossfit, it's become a passion of mine. A healthy body promotes a healthy mind.</div>
-        <div class="vid1 video">  
-            <video src='/src/img/crossfitworkout.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
-        </div>
-        <div class="vid2 video">
-            <video src='/src/img/crossfitworkout3.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
-        </div>
-        <div class="vid3 video">
-            <video src='/src/img/crossfitworkout2.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
-        </div>
+<Nav first={first} second={second}/>
+
+<div class="intro">
+    <div class="vidtext">I love Crossfit, it's become a passion of mine. A healthy body promotes a healthy mind.</div>
+    <div class="vid1 video">  
+        <video src='/src/img/crossfitworkout.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
     </div>
-<!-- </div> -->s
+    <div class="vid2 video">
+        <video src='/src/img/crossfitworkout3.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
+    </div>
+    <div class="vid3 video">
+        <video src='/src/img/crossfitworkout2.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
+    </div>
+</div>
 
+<iframe src="https://www.youtube.com/watch?v=s4BibernJxU&ab_channel=ElegantThemes" title="google" width=300px height=200px></iframe>
 <div class="pictures">
     <img src={fishing} alt="brodie holding a fish">
 </div>
