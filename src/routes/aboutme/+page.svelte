@@ -23,7 +23,7 @@
     <Nav first={first} second={second}/>
     <div class="intro">
         <div class="vidtext">I love Crossfit, it's become a passion of mine. A healthy body promotes a healthy mind.</div>
-        <div class="vid1 video">  
+        <!-- <div class="vid1 video">  
             <video src='/src/img/crossfitworkout.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
         </div>
         <div class="vid2 video">
@@ -31,7 +31,7 @@
         </div>
         <div class="vid3 video">
             <video src='/src/img/crossfitworkout2.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
-        </div>
+        </div> -->
     </div>
 <!-- </div> -->
 
