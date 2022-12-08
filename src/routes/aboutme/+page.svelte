@@ -3,6 +3,7 @@
     import Fa from 'svelte-fa'
     import {faHouse} from '@fortawesome/free-solid-svg-icons'
     import fishing from '/src/img/fishing.jpg'
+    import video1 from '/src/img/crossfitworkout.mp4'
 
     let first ={
         name:'Home',
@@ -26,14 +27,14 @@
 <div class="intro">
     <div class="vidtext">I love Crossfit, it's become a passion of mine. A healthy body promotes a healthy mind.</div>
     <div class="vid1 video">  
-        <video src='/src/img/crossfitworkout.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
+        <video src={video1} autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
     </div>
-    <div class="vid2 video">
+    <!-- <div class="vid2 video">
         <video src='/src/img/crossfitworkout3.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
     </div>
     <div class="vid3 video">
         <video src='/src/img/crossfitworkout2.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
-    </div>
+    </div> -->
 </div>
 
 <div class="pictures">
