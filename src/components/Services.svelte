@@ -18,7 +18,7 @@
             <h3>Fit Your Needs</h3>
             <h1>My <br> Services.</h1>
             <p>Your small business needs a website?  Lets get you on the map, I offer a variety of choices.</p>
-            <a href=/Services >Explore</a>
+            <a href=/services >Explore</a>
         </div>
         <div class="picture">
             

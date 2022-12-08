@@ -25,10 +25,10 @@
 <Nav first={first} second={second}/>
 
 <div class="intro">
-    <div class="vidtext">I love Crossfit, it's become a passion of mine. A healthy body promotes a healthy mind.</div>
+    <!-- <div class="vidtext">I love Crossfit, it's become a passion of mine. A healthy body promotes a healthy mind.</div>
     <div class="vid1 video">  
         <video src={video1} autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
-    </div>
+    </div> -->
     <!-- <div class="vid2 video">
         <video src='/src/img/crossfitworkout3.mp4' autoplay={vidauto} loop={vidauto} muted={vidauto}> <track kind='captions'></video>
     </div>
