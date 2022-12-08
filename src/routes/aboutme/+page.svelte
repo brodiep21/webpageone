@@ -36,7 +36,6 @@
     </div>
 </div>
 
-<iframe src="https://www.youtube.com/watch?v=s4BibernJxU&ab_channel=ElegantThemes" title="google" width=300px height=200px></iframe>
 <div class="pictures">
     <img src={fishing} alt="brodie holding a fish">
 </div>
