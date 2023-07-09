@@ -26,7 +26,7 @@
    
     <h1 class= "metitle">About Me.</h1>
     
-    <h2 class="me1">Aspiring full-time developer, I design websites for small companies and work on backend developer projects with mentors from bluemodus and greymatter.</h2>
+    <h2 class="me1">Aspiring full-time developer, I design websites for small companies and work on backend developer projects with mentors from bluemodus and greymatter. I currently work as a DevOps Engineer for National General (Allstate)</h2>
     <div class="learnmore"><a href="/aboutme">Learn More</a></div>
     <div class="doc"><button on:click={ () => window.open('https://docs.google.com/document/d/1q8Du_bYL3ckKOHOhYog7Qqp3MvruETFn/edit?usp=sharing&ouid=116822994425715327585&rtpof=true&sd=true')}> View My Resume</button></div>
     <!-- <div class="quote">
